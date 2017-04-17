@@ -1,0 +1,145 @@
+.sidebar-collapse-btn-wrapper {
+    padding-top: 35px;
+}
+
+.sidebar-collapse-btn-wrapper a.sidebar-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-collapse-btn-wrapper a.sidebar-toggle i {
+    padding: 8px 12px;
+    border-radius: 50%;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+}
+
+.main-header .navbar {
+    background-color: #fff !important;
+}
+
+.main-header .navbar .nav > li > a {
+    color: #3c8dbc !important;
+}
+
+.sidebar-menu > li:hover > a,
+.sidebar-menu > li.active > a {
+    border-left: 2px solid #00a2de !important;
+    background-color: #1a1a1a !important;
+}
+
+.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+    margin-left: -1px;
+}
+
+footer.main-footer {
+    font-size: 13px;
+}
+
+footer.main-footer .pull-right.hidden-xs a i {
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    // border: solid 1px rgba(0, 0, 0, 0.1);
+    // padding: 20px;
+}
+
+.main-header .logo {
+    background-color: #1a1a1a !important;
+}
+
+.main-header .logo span {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.main-sidebar {
+    background-color: #1e1e1e !important;
+    background-image: url('../../../../assets/images/ornaments.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+ul.sidebar-menu li a {
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ul.sidebar-menu li ul {
+    // padding-left: 53px !important;
+    padding-right: 53px;
+}
+
+.main-header .navbar .nav > li > a > .label {
+    padding: 4px 3px;
+    border-radius: 50%;
+}
+
+.content-header > .breadcrumb > li + li::before {
+    content: '/\00a0';
+}
+
+.main-sidebar .user-panel {
+    // min-height: 220px;
+    // height: 220px;
+}
+
+.user-panel > .image > img {
+    max-width: 100px;
+    margin: 25px auto 0;
+    display: block;
+}
+
+.user-panel > .info {
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-panel > .info > a {
+    padding-bottom: 0;
+}
+
+.user-panel > .info > a > p {
+    color: #ccc;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.user-panel > .info > span {
+    color: #ccc;
+    text-align: center;
+    display: block;
+}
+
+.main-footer {
+    border-top: none;
+    padding: 5px;
+}
+
+.navbar a#logo-indie {
+    background: url('../../../../assets/images/logo-indie.png') no-repeat center center;
+    height: 42px;
+    margin-top: 3px;
+    width: 80px;
+    display: inline-block;
+}
+
+.content-wrapper,
+.right-side {
+    // background-color: #ecf0f5;
+    background-color: #f0f0f0;
+}
+
+.box {
+    border-top-color: #00a2de;
+}

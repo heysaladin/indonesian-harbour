@@ -1,0 +1,30 @@
+.box {
+    overflow: hidden;
+    border-top: 0;
+}
+
+.box-header {
+    // width: 250px;
+    // height: 250px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: auto;
+    background: #fff;
+    border-top: 3px solid transparent;
+    -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1 0 0 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn-rounded {
+    margin: 7px 3px 0;
+    padding: 10px 20px !important;
+    background: #00a2de;
+    border-radius: 25px;
+    color: white !important;
+    i {}
+}

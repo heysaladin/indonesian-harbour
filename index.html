@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>PT. PELINDO III</title>
+    <link rel="shortcut icon" type="images/x-icon" href="https://www.pelindo.co.id/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/hideheader.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/scripts/hideheader.js"></script>
+  </head>
+  <body class="menu">
+    <div id="loader_box" style="opacity: 0; display: none;">
+      <div class="preloader"></div>
+    </div>
+    <div id="login-popup" class="popup white-popup mfp-with-anim mfp-hide">
+      <div class="popup-header"><srong>Log</srong> In &amp; <srong>Connect</srong> with Us</div>
+      <div class="popup-form-wrapper">
+        <div class="popup-form">
+          <form method="GET" action="admin-welcome.html">
+            <div class="form-group">
+              <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group"><span class="small"><strong><a href="register.html">Lupa Password?</a></strong></span></div>
+            <div class="form-group center-flex">
+              <button type="submit" class="btn btn-rounded">Log In</button>
+            </div>
+            <div class="form-group">
+              <p class="center">Belum punya Akun?<a href="register.html">Silakan Mendftar!</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="header-scroll nav-down">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img style="height: auto;" src="assets/images/logo-indie.png"></a>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="main-menu"><a href="single.html">Profil Perusahaan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Media</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Layanan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Masyarakat &amp; Lingkungan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Tata Kelola</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Info Investor</a></li>
+            <li class="clean-li main-menu"><a id="login-header" href="#login-popup" data-effect="mfp-zoom-in" class="btn-rounded search-btn open-popup-link">Login</a></li>
+            <li class="clean-li main-menu"><a href="news.html" class="btn-rounded btn-rounded-circle"><i class="fa fa-search"></i></a></li>
+            <li class="clean-li main-menu"><a href="" style="padding: 7.5px !important;" class="btn-rounded btn-rounded-circle"><img src="assets/images/flag-1.png"></a></li>
+            <li id="burger-scroll"><a href="#" class="menu-toggle">
+                <div class="burger-icon">
+                  <div class="burger-bar"></div>
+                  <div class="burger-bar"></div>
+                  <div id="burger-half" class="burger-bar"></div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"><a href="index.html" class="navbar-brand"><img style="height: 66px;" src="assets/images/logo.png"></a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="main-menu"><a href="single.html">Profil Perusahaan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="" data-toggle="dropdown" class="dropdown-toggle">Media</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Glyphicons</li>
+                    <li><a href="#">Available glyphs</a></li>
+                    <li class="disabled"><a href="#">How to use</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Dropdowns</li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Aligninment options</a></li>
+                    <li><a href="#">Headers</a></li>
+                    <li><a href="#">Disabled menu items</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Button groups</li>
+                    <li><a href="#">Basic example</a></li>
+                    <li><a href="#">Button toolbar</a></li>
+                    <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Nesting</a></li>
+                    <li><a href="#">Vertical variation</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Button dropdowns</li>
+                    <li><a href="#">Single button dropdowns</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Input groups</li>
+                    <li><a href="#">Basic example</a></li>
+                    <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Checkboxes and radio addons</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Navs</li>
+                    <li style="padding-left: 22px;"><img style="width: 100%; height: auto;" src="assets/img/news-img.jpg"></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Navbar</li>
+                    <li><a href="#">Default navbar</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Text</a></li>
+                    <li><a href="#">Non-nav links</a></li>
+                    <li><a href="#">Component alignment</a></li>
+                    <li><a href="#">Fixed to top</a></li>
+                    <li><a href="#">Fixed to bottom</a></li>
+                    <li><a href="#">Static top</a></li>
+                    <li><a href="#">Inverted navbar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Layanan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Masyarakat &amp; Lingkungan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Tata Kelola</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Info Investor</a></li>
+            <li class="main-menu"><a id="login-header" href="#login-popup" data-effect="mfp-zoom-in" class="btn-rounded search-btn open-popup-link">Login</a></li>
+            <li class="main-menu"><a href="news.html" class="btn-rounded btn-rounded-circle"><i class="fa fa-search"></i></a></li>
+            <li class="main-menu dropdown-toggle lang"><a href="" style="padding: 7.5px !important;" data-toggle="dropdown" class="btn-rounded btn-rounded-circle"><img src="assets/images/flag-1.png"></a>
+              <ul role="menu" aria-labelledby="menu1" class="dropdown-menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IND</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ENG</a></li>
+              </ul>
+            </li>
+            <li id="burger"><a href="#" class="menu-toggle">
+                <div class="burger-icon">
+                  <div class="burger-bar"></div>
+                  <div class="burger-bar"></div>
+                  <div id="burger-half" class="burger-bar"></div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="menu-side"><a href="#" class="menu-toggle">
+        <div id="close-menu" class="burger-icon"></div></a>
+      <li class="list-main-menu-side"><a href="single.html"><span>Profil Perusahaan</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Media</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Layanan</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Masyarakat &amp; Lingkungan</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Tata Kelola</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Info Investor</span></a></li>
+      <li class="list-main-menu-side"><a id="login-header" href="#login-popup" data-effect="mfp-zoom-in" class="btn-rounded search-btn open-popup-link"><span>Login</span></a></li>
+      <li id="vertical-line"></li>
+      <li id="li-social-side"><span class="title-social">Temukan kami</span>
+        <div class="social-wrapper"><a href="#"><span id="soc-fb" class="icon-social fa fa-facebook"></span></a><a href="#"><span id="soc-twitter" class="icon-social fa fa-twitter"></span></a><a href="#"><span id="soc-instagram" class="icon-social fa fa-instagram"></span></a></div>
+      </li>
+    </nav>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/home.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/home-medium.css" media="only screen and (min-width:768px) and (max-width:980px)">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/home-small.css" media="only screen and (min-width:600px) and (max-width:767px)">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/home-extrasmall.css" media="only screen and (min-width:300px) and (max-width:599px)">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/map-style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.pelindo.co.id/html/css/jquery.bxslider.css">
+    <div id="main-content">
+      <div id="showcase">
+        <div class="showcase-image-wrapper">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="slide-wrapper">
+                <div class="img-bg"><img src="assets/images/slide-bg-1.jpg"/></div>
+                <div class="showcase-caption-wrapper container">
+                  <div class="svg">
+                    <svg version="1.1" id="svg1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                     x="0px" y="0px" width="72.9px" height="72.9px" viewBox="0 0 72.9 72.9" style="enable-background:new 0 0 72.9 72.9;"
+                     xml:space="preserve">
+                  <style type="text/css">
+                  <![CDATA[
+                    .st0{fill:none;stroke:#E80707;stroke-miterlimit:10;}
+                    .st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#14274A;}
+                    .st4{fill:url(#SVGID_1_);}
+                    .st5{fill:url(#SVGID_2_);}
+                    .st6{fill:url(#SVGID_3_);}
+                    .st7{fill:url(#SVGID_4_);}
+                    .st8{fill:url(#SVGID_5_);}
+                    .st9{fill:url(#SVGID_6_);}
+                    .st10{fill:url(#SVGID_7_);}
+                    .st11{fill:url(#SVGID_8_);}
+                    .st12{fill:url(#SVGID_9_);}
+                    .st13{fill-rule:evenodd;clip-rule:evenodd;}
+                    .st14{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2,3;}
+                    .st15{fill:#FEFEFE;}
+                    .st16{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st17{fill:#FFFFFF;}
+                    .st18{fill:none;stroke:#B92B00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st19{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                    .st20{stroke:#000000;stroke-miterlimit:10;}
+                    .st21{fill:none;stroke:#B92B00;stroke-miterlimit:10;}
+                    .st22{fill:none;stroke:#B92B00;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st23{fill:none;stroke:#B92B00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st24{fill-rule:evenodd;clip-rule:evenodd;fill:#000001;}
+                  ]]>
+                  </style>
+                  <circle class="st16" cx="36.5" cy="36.5" r="36"/>
+                  <circle class="st14" cx="36.5" cy="36.5" r="32.2"/>
+                  <g>
+                    <path class="st16" d="M8.3,46.5l3.5,1.4c0,0,6.4-8.2,8.2-17.8c0,0,1-1.6-0.6-2.2c-1.6-0.6-9.7-4.2-9.7-4.2"/>
+                    <path class="st16" d="M20.2,28.8l4.7,1.7c0,0,0.6,0.4,0.5,1.3c-0.1,0.8-3.6,10.3-5,12.3c0,0-0.5,0.5-1.1,0.2
+                      c-0.6-0.3-4.3-1.8-4.3-1.8"/>
+                    <path class="st16" d="M25.4,31.6c0,0,0,0.2,1.4,0.3c1.4,0.1,8.5,0.5,8.5,0.5"/>
+                    <path class="st16" d="M21.4,42.5c0,0,1.8,1.7,2.6,2.2"/>
+                    <path class="st16" d="M46,34.2c0,0-5.4-2.1-6.6-2.6c-1.2-0.5-2.4,0-3,0.3c-0.6,0.3-3.7,1.4-4.2,1.5c-0.5,0.1-1,1.4-1.1,2
+                      C31,36,31,37.4,31,37.4l-0.8,2.2c0,0,1.3,2.4,3.9-0.2c0,0,1-1.6,1.3-2.2c0,0,1.6,0.1,2.3-0.3c0,0,0.1,5.7,7.2,5.6"/>
+                    <line class="st16" x1="50.1" y1="45.7" x2="47.9" y2="47.3"/>
+                    <path class="st16" d="M34.9,52.9c0,0,2,1.2,2.5,1.1c0.5,0,0.7,0.4,1.9-0.6"/>
+                    <path class="st16" d="M34.7,49.8c0,0,3.2,3.3,5,3.5c2.3,0.3,3-1.3,3-1.3"/>
+                    <path class="st16" d="M45.9,50.2c0,0.8-0.7,1.6-0.7,1.6c-3.4,1.6-7.7-4.3-7.7-4.3"/>
+                    <path class="st16" d="M39.5,44.7c0,0,3.8,4.9,6.7,5.3c0,0,1.8,0,2.2-1.9l-5.1-5.5"/>
+                    <path class="st16" d="M55.5,46.9c0,0-3.1,1.3-5,0c0,0-0.4-6.6-4.2-12.8l2.8-1.4"/>
+                    <path class="st16" d="M49.2,32.3c0,0,5.1,8.9,9.1,17.6c0,0-1.2-0.8-2.4-2.7"/>
+                    <line class="st16" x1="49.7" y1="31.9" x2="63.1" y2="24.9"/>
+                    <path class="st16" d="M59.1,50.2c0,0,1-1.5,5.2-3.1"/>
+                    <path class="st16" d="M24.1,47.4c0,0-1.6-1.9,1.3-3.4c0,0,1.4-0.5,2.2,1.6C27.7,45.5,26.3,49.1,24.1,47.4z"/>
+                    <path class="st16" d="M27.9,46.4c0,0,1.8-0.6,2.3,0.5c0.5,1,0.5,1.6-0.3,2.4c-0.8,0.8-2.1,1.9-3.3,0.6C25.3,48.7,26.7,47,27.9,46.4
+                      z"/>
+                    <path class="st16" d="M29,50.8c0,0,1.5-3,3.3-2.9c0,0,1.1,0.5,1.2,1.5c0,0-0.6,1.6-1.4,2.5C31.4,52.8,29.7,52.7,29,50.8z"/>
+                    <path class="st16" d="M35.5,53.5c0,0-1.3,1-2.7,0.6c-1.5-0.4-0.9-2.4,0.5-3.6c0,0,1.9-0.2,1.5,2.2"/>
+                    <path class="st16" d="M33.1,51.5c0,0,0.5,0.6,1.3,0.6"/>
+                    <path class="st16" d="M31,49.7c0,0-0.2,0.6,1,0.6"/>
+                    <path class="st16" d="M28,47.6c0,0-0.3,0.7,1.1,1.1"/>
+                    <path class="st16" d="M25.3,45.2c0,0,0,0.6,0.9,0.7"/>
+                    <path class="st16" d="M31.3,37.2c0,0,1.2,0.1,1.5,0.6c0.2,0.5-0.9,1.5-1.8,1.6"/>
+                  </g>
+                  <path class="st16" d="M19.5,23.4c0,0,5.3-10.5,18-10.3C48.9,13.4,54,23.6,54,23.6"/>
+                  </svg>
+
+                  </div>
+                  <h1 class="main-text">Customer Focus</h1>
+                  <p class="slide-text">Selalu mengutamakan kepuasan pelanggan. Perilaku utama dalam nilai inti Customer Focus adalah melayani dan tangguh.</p>
+                </div>
+                <div class="img-wrapper"><img src="assets/images/slide-1.png"/></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-wrapper">
+                <div class="img-bg"><img src="assets/images/slide-bg-2.jpg"/></div>
+                <div class="showcase-caption-wrapper container">
+                  <div class="svg">
+                    <svg version="1.1" id="svg2" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                     x="0px" y="0px" width="72.9px" height="72.9px" viewBox="0 0 72.9 72.9" style="enable-background:new 0 0 72.9 72.9;"
+                     xml:space="preserve">
+                  <style type="text/css">
+                  <![CDATA[
+                    .st0{fill:none;stroke:#E80707;stroke-miterlimit:10;}
+                    .st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#14274A;}
+                    .st4{fill:url(#SVGID_1_);}
+                    .st5{fill:url(#SVGID_2_);}
+                    .st6{fill:url(#SVGID_3_);}
+                    .st7{fill:url(#SVGID_4_);}
+                    .st8{fill:url(#SVGID_5_);}
+                    .st9{fill:url(#SVGID_6_);}
+                    .st10{fill:url(#SVGID_7_);}
+                    .st11{fill:url(#SVGID_8_);}
+                    .st12{fill:url(#SVGID_9_);}
+                    .st13{fill-rule:evenodd;clip-rule:evenodd;}
+                    .st14{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2,3;}
+                    .st15{fill:#FEFEFE;}
+                    .st16{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st17{fill:#FFFFFF;}
+                    .st18{fill:none;stroke:#B92B00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st19{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                    .st20{stroke:#000000;stroke-miterlimit:10;}
+                    .st21{fill:none;stroke:#B92B00;stroke-miterlimit:10;}
+                    .st22{fill:none;stroke:#B92B00;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st23{fill:none;stroke:#B92B00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st24{fill-rule:evenodd;clip-rule:evenodd;fill:#000001;}
+                  ]]>
+                  </style>
+                  <circle class="st16" cx="36.5" cy="36.5" r="36"/>
+                  <circle class="st14" cx="36.5" cy="36.5" r="32.2"/>
+                  <g>
+                    <path class="st16" d="M38.5,55.5c0,0-0.2-1.2,0.6-1.1c1,0,8.6,0,8.6,0s1,0.1,1,0.9s0,2.6,0,2.6s0.1,1.1-1.1,1.3s-8.5,0-8.5,0
+                      s-0.7-0.4-0.7-0.9S38.5,55.5,38.5,55.5z"/>
+                    <path class="st16" d="M38.8,54.9v-6c0,0,0.7-2.2,1.5-3.1s6.5-6.3,6.5-6.3s2.2-2,3.2-1.2c1.7,1.4-3,5.7-3,5.7"/>
+                    <path class="st16" d="M50.2,40.2c0,0,1.1-1.7,1.2-3.2s0-4.5,0-4.5s0.1-1,0.9-2s1.9-3,2.9-3s1.7,0.6,1.6,2.8s0,9.3,0,9.3
+                      s0,2.8-1.2,4s-7.3,6.8-7.3,6.8s-0.8,1.3-0.6,3.7"/>
+                    <path class="st16" d="M33.7,55.5c0,0,0.2-1.2-0.6-1.1c-1,0-8.5,0-8.5,0s-0.9,0.1-0.9,0.9s0,2.6,0,2.6s-0.3,1.1,1,1.3s8.4,0,8.4,0
+                      s0.6-0.4,0.6-0.9S33.7,55.5,33.7,55.5z"/>
+                    <path class="st16" d="M33.8,54.9v-6c0,0-0.8-2.2-1.6-3.1s-6.5-6.3-6.5-6.3s-2.2-2-3.3-1.2c-1.7,1.4,3.1,5.7,3.1,5.7"/>
+                    <path class="st16" d="M22.1,40.2c0,0-1.1-1.7-1.2-3.2s0-4.5,0-4.5s-0.1-1-0.9-2s-1.9-3-2.9-3s-1.7,0.6-1.6,2.8s0,9.3,0,9.3
+                      s0,2.8,1.2,4s7.3,6.8,7.3,6.8s0.8,1.3,0.6,3.7"/>
+                    <path class="st16" d="M35.9,34c0,0-4.6-6.2,2.1-9.8s13.7-4.1,13.7-4.1s-0.5,7.7-5.8,13.2S35.9,34,35.9,34z"/>
+                    <line class="st16" x1="35.9" y1="34" x2="51.7" y2="20.1"/>
+                    <line class="st16" x1="38" y1="32.5" x2="45.8" y2="32.6"/>
+                    <line class="st16" x1="40.3" y1="29.9" x2="40.6" y2="23"/>
+                    <line class="st16" x1="43.5" y1="27.4" x2="49.3" y2="27.7"/>
+                    <line class="st16" x1="45.9" y1="25.3" x2="46.4" y2="21.3"/>
+                    <line class="st16" x1="47.7" y1="23.5" x2="51" y2="23.7"/>
+                    <path class="st16" d="M35.1,33.7c0,0-3.7,3.2-7.2,1.6s-5.3-4.6-5.3-10s0.9-12.2,0.9-12.2s5.3,3.9,9.8,6.4c3.6,2,3.8,4.8,3.8,4.8"/>
+                    <line class="st16" x1="33.9" y1="34.4" x2="23.8" y2="13.7"/>
+                    <line class="st16" x1="32.7" y1="32" x2="22.8" y2="27.5"/>
+                    <line class="st16" x1="30.8" y1="28.1" x2="34.5" y2="20.6"/>
+                    <line class="st16" x1="28.8" y1="23.4" x2="30.3" y2="18.3"/>
+                    <line class="st16" x1="27.3" y1="21.2" x2="23" y2="19.4"/>
+                  </g>
+                  </svg>
+                  </div>
+                  <h1 class="main-text">Care</h1>
+                  <p class="slide-text">Terdepan dalam kepedulian kepada pemangku kepentingan dan lingkungan. Perilaku utama dalam nilai inti Care adalah peka dan sigap.</p>
+                </div>
+                <div class="img-wrapper"><img src="assets/images/slide-2.png"/></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-wrapper">
+                <div class="img-bg"><img src="assets/images/slide-bg-3.jpg"/></div>
+                <div class="showcase-caption-wrapper container">
+                  <div class="svg">
+                    <svg version="1.1" id="svg3" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                     x="0px" y="0px" width="72.9px" height="72.9px" viewBox="0 0 72.9 72.9" style="enable-background:new 0 0 72.9 72.9;"
+                     xml:space="preserve">
+                  <style type="text/css">
+                  <![CDATA[
+                    .st0{fill:none;stroke:#E80707;stroke-miterlimit:10;}
+                    .st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st3{fill-rule:evenodd;clip-rule:evenodd;fill:#14274A;}
+                    .st4{fill:url(#SVGID_1_);}
+                    .st5{fill:url(#SVGID_2_);}
+                    .st6{fill:url(#SVGID_3_);}
+                    .st7{fill:url(#SVGID_4_);}
+                    .st8{fill:url(#SVGID_5_);}
+                    .st9{fill:url(#SVGID_6_);}
+                    .st10{fill:url(#SVGID_7_);}
+                    .st11{fill:url(#SVGID_8_);}
+                    .st12{fill:url(#SVGID_9_);}
+                    .st13{fill-rule:evenodd;clip-rule:evenodd;}
+                    .st14{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2,3;}
+                    .st15{fill:#FEFEFE;}
+                    .st16{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st17{fill:#FFFFFF;}
+                    .st18{fill:none;stroke:#B92B00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st19{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                    .st20{stroke:#000000;stroke-miterlimit:10;}
+                    .st21{fill:none;stroke:#B92B00;stroke-miterlimit:10;}
+                    .st22{fill:none;stroke:#B92B00;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st23{fill:none;stroke:#B92B00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st24{fill-rule:evenodd;clip-rule:evenodd;fill:#000001;}
+                  ]]>
+                  </style>
+                  <circle class="st16" cx="36.5" cy="36.5" r="36"/>
+                  <path class="st14" d="M58.9,59.5c-5.8,5.7-13.7,9.1-22.5,9.1c-8.6,0-16.3-3.3-22.1-8.8"/>
+                  <path class="st14" d="M7.4,50.4c-2-4.2-3.2-9-3.2-14c0-17.8,14.4-32.2,32.2-32.2s32.2,14.4,32.2,32.2c0,5.5-1.4,10.7-3.8,15.3"/>
+                  <path class="st16" d="M14.7,41.1c-0.3-1.5-0.5-3-0.5-4.6c0-6.7,3-12.8,7.7-16.8"/>
+                  <path class="st16" d="M50.8,19.5c4.8,4.1,7.8,10.1,7.8,16.9c0,1.5-0.1,2.9-0.4,4.2"/>
+                  <g>
+                    <g>
+                      <g>
+                        <path class="st17" d="M37.1,8.9c0.1,0,0.1,0.5,0.1,1.1c0,1.2,0,2.2,0,3.3l0,1.2c0,0.2,0,0.4,0,0.6l0,0.2c0,0.4,0.3,0.8,0.7,0.9
+                          c0.1,0,0.2,0,0.3,0c0.3,0,0.6-0.1,0.8-0.4c0.3-0.4,0.4-0.7,0.4-1c0.1-0.3,0.1-0.7,0.2-1c0.2-1,0.4-2,0.7-3c0,0,0-0.1,0-0.1
+                          c0,0,0,0,0,0c3.1,1.4,4.7,3.5,4.9,6.7c0,0,0,0.1,0,0.1c-0.1,1.1,0.5,1.4,0.8,1.5c0.6,0.1,1,0.5,1,0.6v1c0,0-0.9,0-1.4,0
+                          c-4.2-0.3-7.9-0.5-11-0.5c-3.2,0-5.8,0.3-7.7,0.7c-0.2,0-0.3,0.1-0.3,0.1c0,0,0,0,0,0c-0.6,0-1.5-0.3-1.5-0.3v-0.9
+                          c0-0.2,0.3-0.5,0.6-0.5c1-0.2,1.5-0.9,1.6-1.9c0.2-3,2.1-5.6,4.9-6.6c0.4,1.1,0.6,2.2,0.8,3.3l0,0.3c0,0.2,0.1,0.4,0.1,0.6
+                          c0.1,0.3,0.1,0.5,0.2,0.7c0.1,0.5,0.5,0.8,1,0.8c0,0,0,0,0.1,0c0.5,0,0.9-0.4,0.9-0.9c0.2-2.1,0.2-4.1,0.1-5.6c0-0.5,0-1,0.1-1
+                          h1.5 M37.6,7.9c-0.8,0-1.6,0-2.4,0c-0.6,1-0.6,1.2-0.6,2c0,1.9,0,3.6-0.1,5.5c-0.1-0.4-0.2-0.9-0.3-1.4c-0.3-1.3-0.6-2.6-1-3.9
+                          c-0.1-0.4-0.3-0.6-0.6-0.6c-0.1,0-0.2,0-0.4,0.1c-3.2,1.1-5.6,4.1-5.9,7.5c0,0.5,0,0.9-0.6,1c-0.8,0.1-1.5,0.9-1.5,1.3
+                          c0,0.7,0,1.4,0,2.1c0,0,1.5,0.3,2.5,0.3c0,0,0,0,0,0c0.1,0,0.3-0.2,0.4-0.1c1.3-0.3,3.6-0.6,7.7-0.6c2.8,0,6.3,0.1,10.9,0.5
+                          c0.9,0,1.5,0,2.5,0c0-0.7,0-1.4,0-2.1c0-0.6-0.9-1.3-1.8-1.5c-0.3-0.1-0.1-0.4-0.1-0.7c-0.3-3.7-2.2-6.1-5.5-7.5
+                          c-0.3-0.1-0.6-0.2-0.7-0.2c-0.3,0-0.4,0.3-0.6,0.9c-0.4,1.3-0.7,2.7-1,4.1c0,0.2-0.1,0.4-0.2,0.6c0-0.2,0-0.4,0-0.7
+                          c0-1.6,0-2.9,0-4.5C38.2,9.1,38.2,8.9,37.6,7.9L37.6,7.9z"/>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path class="st17" d="M35.5,22.7c2.6,0,5.3,0.2,8.1,0.4c0.2,0.3,0.4,0.4,0.7,0.5c0,0,1.6,0.3,1.2,3.4c-0.3,2.1-1.1,2.9-1.6,2.9
+                          c-0.1,0-0.2,0-0.2,0c-0.4,0-0.7,0.2-0.9,0.6c0,0-0.9,2.1-2.7,3.7c-0.2,0.2-0.3,0.5-0.3,0.8l0.2,3.2L37,40.3
+                          c-0.2,0.2-0.4,0.4-0.4,0.7s0,0.5,0.2,0.8l1,1.3l-1.1,0.9c-0.3,0.2-0.4,0.6-0.4,0.9l1.3,7.8c0.1,0.5,0.5,0.8,0.9,0.8
+                          c0,0,0.1,0,0.1,0c0.4,0,0.8-0.3,0.9-0.7l4.3-13l8.7,3c0.1,0,0.1,0,0.2,0c0,0,4,0.7,4.6,3.5c0.6,2.7,1.6,6.6,2,8.3
+                          c-2.1,0.7-7.3,2.6-9.4,2.9c-6.1,1-14,1.3-14,1.3H36c-0.7,0-4.9-0.1-12.9-1.3c-6-0.9-9.2-2.2-10.4-2.8c0.4-1.7,1.5-5.7,2-8.4
+                          c0.6-2.8,4.5-3.5,4.6-3.5c0.1,0,0.1,0,0.2,0l8.7-3l4.3,13c0.1,0.4,0.5,0.7,0.9,0.7c0,0,0.1,0,0.1,0c0.5,0,0.8-0.4,0.9-0.8
+                          l1.3-7.8c0.1-0.4-0.1-0.7-0.4-0.9L34.3,43l1-1.3c0.2-0.2,0.3-0.5,0.2-0.8s-0.2-0.5-0.4-0.7l-2.9-2.1l0.2-3.2
+                          c0-0.3-0.1-0.6-0.3-0.8c-1.8-1.7-2.7-3.7-2.7-3.7c-0.2-0.4-0.5-0.6-0.9-0.6c-0.1,0-0.1,0-0.2,0c-0.6,0-1.4-0.8-1.7-2.9
+                          c-0.4-3,1.1-3.3,1.2-3.4c0.3,0,0.6-0.3,0.8-0.6C30.3,22.9,32.6,22.7,35.5,22.7L35.5,22.7 M35.5,21.7c-3.4,0-6,0.3-7.8,0.4l0,0.5
+                          c0,0-2.6,0.4-2.1,4.5c0.5,3.5,2.1,3.7,2.7,3.7c0.1,0,0.1,0,0.1,0s0.9,2.2,3,4.1l-0.2,3.7l3.4,2.4l-1.7,2.1l1.9,1.5l-1.3,7.8
+                          l-4.7-14l-9.7,3.4c0,0-4.7,0.7-5.4,4.3c-0.7,3.5-2.2,9.1-2.2,9.1s3,2,11.5,3.3c8.1,1.2,12.3,1.3,13,1.3c0.1,0,0.1,0,0.1,0
+                          s8-0.3,14.2-1.3c2.8-0.4,10.4-3.3,10.4-3.3s-1.5-5.6-2.2-9.1c-0.7-3.5-5.4-4.3-5.4-4.3l-9.7-3.4l-4.7,14l-1.3-7.8l1.9-1.5
+                          l-1.7-2.1l3.4-2.4L40.7,35c2-1.9,3-4.1,3-4.1s0.1,0,0.1,0c0.5,0,2.2-0.3,2.7-3.7c0.6-4.1-2-4.5-2-4.5l0-0.4
+                          C40.9,21.9,38,21.7,35.5,21.7L35.5,21.7z"/>
+                      </g>
+                    </g>
+                    <path class="st16" d="M31.7,34.8c0,0,1.6,1.4,4.3,1.5"/>
+                    <path class="st16" d="M27.9,23.1c0,0,0.1,3.5,0.6,5.1"/>
+                    <path class="st16" d="M44.2,23.1c0,0-0.1,3.5-0.6,5.1"/>
+                    <line class="st16" x1="37.2" y1="57.9" x2="38.9" y2="53"/>
+                    <line class="st16" x1="33.9" y1="54.8" x2="33.2" y2="52.9"/>
+                  </g>
+                  <path class="st16" d="M30.9,62.9c0,0,3.4,0.9,10.2,0.1"/>
+                  </svg>
+                  </div>
+                  <h1 class="main-text">Integrity</h1>
+                  <p class="slide-text">Berpikir, berkata dan berperilaku terpuji, menjaga martabat serta menjunjung tinggi etika. Perilaku utama dalam nilai inti Integrity adalah disiplin dan tanggung jawab.</p>
+                </div>
+                <div class="img-wrapper"><img src="assets/images/slide-3.png"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bar-gradient">
+        <div class="container">
+          <ul class="nav navbar-nav nav-height">
+            <li><a href="single.html">Beranda</a></li>
+            <li><a href="single.html">Karir</a></li>
+            <li><a href="single.html">Pengadaan</a></li>
+            <li><a href="single.html">Informasi Publik</a></li>
+            <li><a href="single.html">Peta Situs</a></li>
+            <li><a href="single.html">Kontak</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-rights pull-right">
+            <li><a href="story.html">
+                <div class="left"><span>Explore great</span><span class="bold"><b>PT. PELINDO III Stories</b></span></div>
+                <div class="right"><span class="circle"><i class="fa fa-angle-right"></i></span></div></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <div class="hot-news">
+                <div class="image-wrapper"><img src="assets/img/news-img.jpg"></div>
+                <div class="caption-wrapper"><span class="date-time">28-Oktober-2016</span>
+                  <h3 class="title">Pelindo III terapkan transaksi non tunai via e-Port</h3>
+                  <p class="short-article">Direktur Keuangan Pelindo III Saefudin Noer saat seremonial penerapan transaksi kepelabuhanan menggunakan e-Port sebagai implementasi GNNT.</p>
+                  <div class="bottom"><a href="single.html" class="btn btn-rounded btn-rounded-ghost">Selengkapnya<i class="fa fa-angle-right"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div>
+                <div class="card-header">
+                  <h5>Berita <strong>Terpopuler</strong></h5>
+                </div>
+                <div class="card-body"><a href="single.html" class="news-item">
+                    <div class="left"><span class="date-time">28-Oktober-2016</span><span class="bold"><b>Press Release: Meriahkan Sumpah Pemuda, Pelindo III Ikuti Pawai</b></span></div>
+                    <div class="right"><span class="circle"><i class="fa fa-angle-right"></i></span></div></a><a href="single.html" class="news-item">
+                    <div class="left"><span class="date-time">28-Oktober-2016</span><span class="bold"><b>Press Release: Meriahkan Sumpah Pemuda, Pelindo III Ikuti Pawai</b></span></div>
+                    <div class="right"><span class="circle"><i class="fa fa-angle-right"></i></span></div></a><a href="single.html" class="news-item">
+                    <div class="left"><span class="date-time">28-Oktober-2016</span><span class="bold"><b>Press Release: Meriahkan Sumpah Pemuda, Pelindo III Ikuti Pawai</b></span></div>
+                    <div class="right"><span class="circle"><i class="fa fa-angle-right"></i></span></div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="button-block"><a href="news.html" class="btn btn-rounded">Berita Lainnya</a></div>
+        </div>
+      </div>
+      <div id="overview">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <div>
+                <div id="iw-left" class="image-wrapper"></div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div>
+                <h3 class="center overview-text">Komitmen Pelindo III sebagai jasa penyedia layanan yang prima untuk selalu meningkatkan pelayanan akan didukung dengan semangat kerja dan keinginan kuat untuk lebih baik lagi.</h3>
+                <p class="center overview-desc">PT Pelabuhan Indonesia III (Persero)  selalu bekerja keras untuk memenuhi segala tugas, wewenang dan tanggung jawabnya untuk mengelola 43 Pelabuhan Umum di tujuh wilayah provinsi Indonesia.</p>
+                <div class="button-block"><a href="single.html" class="btn btn-rounded">Selengkapnya</a></div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div>
+                <div id="iw-right" class="image-wrapper"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services">
+        <div class="title-section">
+          <h2><strong>Lingkup </strong>Bisnis</h2>
+        </div>
+        <div class="icons-block"><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-01.svg"></div><span class="center icon-text">Pelayanan Jasa Terminal</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-02.svg"></div><span class="center icon-text">Jasa Bongkar Muat Barang</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-03.svg"></div><span class="center icon-text">Dermaga Untuk Bongkar Muat</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-04.svg"></div><span class="center icon-text">Pengisian Bahan Bakar dan Air Bersih</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-05.svg"></div><span class="center icon-text">Jasa Dermaga untuk Bertambat</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-06.svg"></div><span class="center icon-text">Fasilitas Naik Turun Penumpang / Kendaraan</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-07.svg"></div><span class="center icon-text">Gudang dan Penimbunan Barang</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-08.svg"></div><span class="center icon-text">Pusat Distribusi dan Konsolidasi</span></a><a href="single.html" class="item-icon">
+            <div class="icon-wrapper"><img src="assets/images/pelindo-icon-09.svg"></div><span class="center icon-text">Jasa Penundaan Kapal</span></a></div>
+      </div>
+      <div id="map">
+        <div class="head-map">
+          <div class="container">
+            <p class="center">PT. Pelindo III membawahi beberapa cabang pelabuhan besar di Indonesia.<br/> Guna memaksimalkan layanannya, berikut adalah beberapa cabang di bawah kepengurusan PT. Pelindo III:</p>
+            <h2 class="center">Cabang Pelabuhan <strong>PELINDO III</strong></h2>
+          </div>
+        </div>
+        <div class="map-content">
+          <div id="home_cabang" class="map-wrapper">
+            <div id="shadow_map"></div>
+            <div style="opacity: 1;" type-anim="fade" anim-delay="1.8" class="box_map"><div style="position: relative; overflow: hidden;" class="gmap_cabang" id="map_canvas"><div style="height: 100%; width: 100%; position: absolute; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 480px; top: 138px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 736px; top: 138px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 480px; top: -118px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 480px; top: 394px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 736px; top: -118px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 736px; top: 394px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 224px; top: 138px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 992px; top: 138px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 224px; top: -118px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 224px; top: 394px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 992px; top: -118px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 992px; top: 394px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -32px; top: 138px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1248px; top: 138px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -32px; top: -118px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -32px; top: 394px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1248px; top: -118px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1248px; top: 394px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 480px; top: 138px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 736px; top: 138px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 480px; top: -118px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 480px; top: 394px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 736px; top: -118px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 736px; top: 394px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 224px; top: 138px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 992px; top: 138px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 224px; top: -118px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 224px; top: 394px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 992px; top: -118px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 992px; top: 394px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" draggable="false"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -32px; top: 138px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1248px; top: 138px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -32px; top: -118px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -32px; top: 394px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1248px; top: -118px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1248px; top: 394px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 480px; top: 138px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i52!3i32!4i256!2m3!1e0!2sm!3i367042467!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=109738" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 736px; top: 138px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i53!3i32!4i256!2m3!1e0!2sm!3i367042467!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=35854" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 480px; top: -118px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i52!3i31!4i256!2m3!1e0!2sm!3i367042832!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=73614" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 480px; top: 394px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i52!3i33!4i256!2m3!1e0!2sm!3i367042467!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=14688" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 736px; top: -118px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i53!3i31!4i256!2m3!1e0!2sm!3i367042832!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=130801" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 736px; top: 394px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i53!3i33!4i256!2m3!1e0!2sm!3i367042467!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=71875" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 224px; top: 138px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i51!3i32!4i256!2m3!1e0!2sm!3i367042844!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=129337" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 992px; top: 138px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i54!3i32!4i256!2m3!1e0!2sm!3i367042202!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=74321" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 224px; top: -118px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i51!3i31!4i256!2m3!1e0!2sm!3i367042844!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=93316" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 224px; top: 394px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i51!3i33!4i256!2m3!1e0!2sm!3i367042467!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=88572" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 992px; top: -118px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i54!3i31!4i256!2m3!1e0!2sm!3i367042370!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=37054" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 992px; top: 394px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i54!3i33!4i256!2m3!1e0!2sm!3i367042202!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=110342" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -32px; top: 138px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i50!3i32!4i256!2m3!1e0!2sm!3i367042844!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=72150" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1248px; top: 138px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i55!3i32!4i256!2m3!1e0!2sm!3i367042202!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=437" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -32px; top: -118px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i50!3i31!4i256!2m3!1e0!2sm!3i367042844!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=36129" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -32px; top: 394px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i50!3i33!4i256!2m3!1e0!2sm!3i367042298!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=21746" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1248px; top: -118px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i55!3i31!4i256!2m3!1e0!2sm!3i367042370!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=94241" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1248px; top: 394px; transition: opacity 200ms ease-out 0s;"><img alt="" draggable="false" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i6!2i55!3i33!4i256!2m3!1e0!2sm!3i367042202!3m9!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=36458" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div><div style="width: 1px; height: 1px; z-index: 1000; position: absolute; left: 411px; top: 429px;"></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a title="Click to see this area on Google Maps" href="https://maps.google.com/maps?ll=-3.962115,116.82834&amp;z=6&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" target="_blank" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto,Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 527px; top: 228px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2016 Google, ZENRIN</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="z-index: 1000001; position: absolute; right: 251px; bottom: 0px; width: 160px;" class="gmnoprint"><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2016 Google, ZENRIN</span></div></div></div><div style="position: absolute; right: 0px; bottom: 0px;" class="gmnoscreen"><div style="font-family: Roboto,Arial,sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2016 Google, ZENRIN</div></div><div draggable="false" style="z-index: 1000001; -moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 92px; bottom: 0px;" class="gmnoprint gm-style-cc"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" href="https://www.google.com/intl/en-US_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img class="gm-fullscreen-control" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div class="gm-style-cc" style="-moz-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" draggable="false"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/maps/@-3.9621147,116.8283402,6z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" title="Report errors in the road map or imagery to Google" target="_new">Report a map error</a></div></div><div controlheight="55" controlwidth="28" draggable="false" style="margin: 10px; -moz-user-select: none; position: absolute; bottom: 81px; left: 0px;" class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"><div controlheight="55" controlwidth="28" style="position: absolute; left: 0px; top: 0px;" class="gmnoprint"><div style="-moz-user-select: none; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 28px; height: 55px;" draggable="false"><div style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;" title="Zoom in"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" style="position: absolute; left: 0px; top: 0px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230); top: 0px;"></div><div style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;" title="Zoom out"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" style="position: absolute; left: 0px; top: -15px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div></div><div controlheight="28" controlwidth="28" draggable="false" style="margin: 10px; -moz-user-select: none; position: absolute; bottom: 42px; right: 28px;" class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"><div controlheight="28" controlwidth="28" style="background-color: rgb(255, 255, 255); box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; position: absolute; left: 0px; top: 0px;" class="gm-svpc"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Pegman is on top of the Map" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div style="display: none; position: absolute;" controlheight="0" controlwidth="28" class="gmnoprint"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); cursor: pointer; background-color: rgb(255, 255, 255); display: none;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;" class="gmnoprint"><div class="gm-style-mtc" style="float: left;"><div title="Show street map" draggable="false" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); min-width: 22px; font-weight: 500;">Map</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; left: 0px; top: 27px; text-align: left; display: none;"><div title="Show street map with terrain" draggable="false" style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;" role="checkbox"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div title="Show satellite imagery" draggable="false" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); border-left: 0px none; min-width: 42px;">Satellite</div><div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); position: absolute; right: 0px; top: 27px; text-align: left; display: none;"><div title="Show imagery with street names" draggable="false" style="color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;"><span style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;" role="checkbox"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div><div class="gm-style-cc" draggable="false" style="position: absolute; -moz-user-select: none; height: 14px; line-height: 14px; right: 161px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><span>100 km&nbsp;</span><div style="position: relative; display: inline-block; height: 8px; bottom: -1px; width: 42px;"><div style="width: 100%; height: 4px; position: absolute; left: 0px; top: 0px;"></div><div style="width: 4px; height: 8px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"></div><div style="width: 4px; height: 8px; position: absolute; background-color: rgb(255, 255, 255); left: 0px; bottom: 0px;"></div><div style="position: absolute; background-color: rgb(102, 102, 102); height: 2px; left: 1px; bottom: 1px; right: 1px;"></div><div style="position: absolute; width: 2px; height: 6px; left: 1px; top: 1px; background-color: rgb(102, 102, 102);"></div><div style="width: 2px; height: 6px; position: absolute; background-color: rgb(102, 102, 102); bottom: 1px; right: 1px;"></div></div></div></div></div></div></div></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-offset-3 col-lg-6">
+              <form action="#" method="POST" class="form-port">
+                <div class="icon-wrapper"></div><span>Cabang Pelabuhan</span>
+                <div class="form-group">
+                  <input type="text" name="cabang_pelabuhan" placeholder="Cabang Pelabuhan">
+                </div>
+                <button type="submit"><i class="fa fa-angle-down"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home_company">
+        <div class="title-section">
+          <h2><strong>Anak Perusahaan </strong>&amp; Affiliasi</h2>
+        </div>
+        <div class="container">
+          <div class="link_partner">
+            <ul style="width: 1215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);" class="slide_link clearfix">
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/1"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441152502-tps-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/4"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441152994-phc-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/5"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441234216-bjti-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/6"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441234392-pms-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/7"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441234687-ttl-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/8"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441234822-pds-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/3"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441235003-portek-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/9"><img style="transform: matrix(1, 0, 0, 1, 0, 0);" src="https://www.pelindo.co.id/site/images/subsidiaries/1441235183-ambapers-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/11"><img src="https://www.pelindo.co.id/site/images/subsidiaries/1441235362-tpi-keciljpg.jpg"></a></li>
+              <li style="float: left; list-style: outside none none; position: relative; width: 125px;"><a href="https://www.pelindo.co.id/profil-perusahaan/cabang-anak-perusahaan/anak-perusahaan-dan-affiliasi/q/10"><img src="https://www.pelindo.co.id/site/images/subsidiaries/1441235538-jbt-keciljpg.jpg"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-before">
+          <div class="logo-wrapper col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="image-logo"></div>
+            <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="links col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <div class="links-item">
+              <h4>Profil Perusahaan</h4>
+              <ul>
+                <li><a href="single.html">Tentang Kami</a></li>
+                <li><a href="single.html">Manajemen</a></li>
+                <li><a href="single.html">Cabang &amp; Anak Perusahaan</a></li>
+                <li><a href="single.html">Grafik</a></li>
+                <li><a href="single.html">Prestasi</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Media</h4>
+              <ul>
+                <li><a href="single.html">Berita Pers</a></li>
+                <li><a href="single.html">Berita Terkini</a></li>
+                <li><a href="single.html">BUMN Hadir untuk Negeri</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Tata Kelola</h4>
+              <ul>
+                <li><a href="single.html">Tata Kelola yang Baik</a></li>
+                <li><a href="single.html">Sistem Manajemen</a></li>
+                <li><a href="single.html">Sistem Pelaporan Pelanggaran</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Layanan</h4>
+              <ul>
+                <li><a href="single.html">Layanan Kapal</a></li>
+                <li><a href="single.html">Layanan Barang</a></li>
+                <li><a href="single.html">Layanan Peti Kemas</a></li>
+                <li><a href="single.html">Layanan Bongkar Muat</a></li>
+                <li><a href="single.html">Layanan Penumpang</a></li>
+                <li><a href="single.html">Manager On Duty</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Info Investor</h4>
+              <ul>
+                <li><a href="single.html">Pemegang Saham</a></li>
+                <li><a href="single.html">Laporan</a></li>
+                <li><a href="single.html">Obligasi Global</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Masyarakat &amp; Lingkungan</h4>
+              <ul>
+                <li><a href="single.html">PKBL</a></li>
+                <li><a href="single.html">Dukungan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-line">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="single.html">Beranda</a></li>
+          <li><a href="single.html">Karir</a></li>
+          <li><a href="single.html">Pengadaan</a></li>
+          <li><a href="single.html">Informasi Publik</a></li>
+          <li><a href="single.html">Peta Situs</a></li>
+          <li><a href="single.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bar-gradient">
+      <div class="container"><span class="bottom-footer-text">© 2015 Copyright by PT Pelabuhan Indonesia III (Persero). All rights reserved.</span></div>
+    </div>
+    <script src="assets/scripts/walkway.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="assets/scripts/all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.theme.css">
+    <script src="lib/owl-carousel/owl.carousel.js"></script>
+    <script src="lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhGWXAk-elrjJXwWoY-MRVqhW-Sv2FXas&amp;callback=initMap" async="" defer=""></script>
+    <script src="assets/scripts/js"></script>
+    <script src="assets/scripts/map.js"></script>
+    <script src="assets/scripts/map-script.js"></script>
+    <script src="https://www.pelindo.co.id/html/js/jquery.bxslider.js"></script>
+    <script src="assets/scripts/TweenMax.js"></script>
+    <script src="assets/scripts/jquery_library.js"></script>
+    <script src="assets/scripts/jquery_function.js"></script>
+  </body>
+</html>

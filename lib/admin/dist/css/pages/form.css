@@ -1,0 +1,197 @@
+@charset "UTF-8";
+.box{
+    border-color: #00a2de;
+}
+.before-content {
+    width: 100%;
+    min-height: 270px;
+    background: white;
+}
+
+.image-overlay {
+    // margin: -10px 0px 0px -10px;
+    // width: 101.6%;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: inherit;
+    // position: absolute;
+    // z-index: 998;
+}
+
+.content-white {
+    width: 100%;
+    min-height: 75px;
+    background: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-white > div {
+    padding: 15px;
+}
+
+.content-white > div:nth-child(2) > * {
+    padding: 0 15px;
+    display: block;
+}
+
+.content-white > div > span strong {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.content-white > div:nth-child(3) > span strong {
+    font-size: 30px;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 75px;
+    position: absolute;
+    margin-top: -80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.overlay > .col-md-3:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.overlay .col-md-3 .img-wrapper {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.overlay .col-md-3 .img-wrapper img {}
+
+.overlay .col-md-3 span {
+    color: white;
+    display: block;
+    margin-top: 20px;
+    font-size: 30px;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+}
+
+.btn-rounded {
+    // margin: 7px 3px 0;
+    padding: 10px 20px !important;
+    background: #fff;
+    border-radius: 25px;
+    border: solid 1px #00a2de;
+    color: #00a2de !important;
+}
+
+.btn-rounded:hover {
+    background: #00a2de;
+    color: white !important;
+}
+
+form {
+  padding: 5px 0;
+}
+form .form-group select,
+form .form-group input {
+  width: 100%;
+  padding: 10px 15px;
+  background: #fafafa;
+  border-radius: 20px;
+  border: solid 1px #aaaaaa;
+}
+form .form-group input[type="radio"] {
+  width: unset;
+}
+form .form-group input[type=checkbox]:not(old),
+form .form-group input[type=radio]:not(old) {
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+form .form-group input[type=checkbox]:not(old) + label,
+form .form-group input[type=radio]:not(old) + label {
+  display: inline-block;
+  margin-left: -2em;
+  line-height: 1.5em;
+}
+form .form-group input[type=checkbox]:not(old) + label > span,
+form .form-group input[type=radio]:not(old) + label > span {
+  display: inline-block;
+  width: 1.45em;
+  height: 1.45em;
+  margin: 0.25em 0.5em 0.25em 0.25em;
+  border: 0.0625em solid silver;
+  border-radius: 50%;
+  background: white;
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -ms-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: -webkit-linear-gradient(white, white);
+  background-image: linear-gradient(white, white);
+  vertical-align: bottom;
+}
+form .form-group input[type=checkbox]:not(old):checked + label > span,
+form .form-group input[type=radio]:not(old):checked + label > span {
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -ms-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: -webkit-linear-gradient(white, white);
+  background-image: linear-gradient(white, white);
+}
+form .form-group input[type=checkbox]:not(old):checked + label > span:before {
+  content: '✓';
+  display: block;
+  width: 1em;
+  color: #00a2de;
+  font-size: 0.875em;
+  line-height: 1em;
+  text-align: center;
+  text-shadow: 0 0 0.0714em #73994d;
+  font-weight: bold;
+}
+form .form-group input[type=radio]:not(old):checked + label > span > span {
+  display: block;
+  width: 0.90em;
+  height: 0.90em;
+  margin: 0.23em;
+  border: 0.0625em solid #73994d;
+  border-radius: 50%;
+  background: white;
+  background-image: -moz-linear-gradient(#00a2de, #00a2de);
+  background-image: -ms-linear-gradient(#00a2de, #00a2de);
+  background-image: -o-linear-gradient(#00a2de, #00a2de);
+  background-image: -webkit-linear-gradient(#00a2de, #00a2de);
+  background-image: linear-gradient(#00a2de, #00a2de);
+}
+form .form-group input[type="submit"] {
+  background: #00a2de;
+  border-color: #00a2de;
+  color: white !important;
+  font-weight: bold;
+}
+form .form-group input[type="submit"]:hover {
+  background: #1a4462;
+  border-color: #1a4462;
+}
+form .form-group p {
+  margin-top: 15px;
+  color: #777;
+}
+.btn-rounded-special {
+    // margin: 7px 3px 0;
+    padding: 10px 20px !important;
+    // background: #00a2de;
+    border-radius: 25px;
+    // color: white !important;
+    i {}
+}

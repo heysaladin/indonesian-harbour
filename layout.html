@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>PT. PELINDO III</title>
+    <link rel="shortcut icon" type="images/x-icon" href="https://www.pelindo.co.id/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/hideheader.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/scripts/hideheader.js"></script>
+  </head>
+  <body class="menu">
+    <div id="loader_box" style="opacity: 0; display: none;">
+      <div class="preloader"></div>
+    </div>
+    <div id="login-popup" class="popup white-popup mfp-with-anim mfp-hide">
+      <div class="popup-header"><srong>Log</srong> In &amp; <srong>Connect</srong> with Us</div>
+      <div class="popup-form-wrapper">
+        <div class="popup-form">
+          <form method="GET" action="admin-welcome.html">
+            <div class="form-group">
+              <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group"><span class="small"><strong><a href="register.html">Lupa Password?</a></strong></span></div>
+            <div class="form-group center-flex">
+              <button type="submit" class="btn btn-rounded">Log In</button>
+            </div>
+            <div class="form-group">
+              <p class="center">Belum punya Akun?<a href="register.html">Silakan Mendftar!</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="header-scroll nav-down">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img style="height: auto;" src="assets/images/logo-indie.png"></a>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="main-menu"><a href="single.html">Profil Perusahaan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Media</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Layanan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Masyarakat &amp; Lingkungan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Tata Kelola</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Info Investor</a></li>
+            <li class="clean-li main-menu"><a id="login-header" href="#login-popup" data-effect="mfp-zoom-in" class="btn-rounded search-btn open-popup-link">Login</a></li>
+            <li class="clean-li main-menu"><a href="news.html" class="btn-rounded btn-rounded-circle"><i class="fa fa-search"></i></a></li>
+            <li class="clean-li main-menu"><a href="" style="padding: 7.5px !important;" class="btn-rounded btn-rounded-circle"><img src="assets/images/flag-1.png"></a></li>
+            <li id="burger-scroll"><a href="#" class="menu-toggle">
+                <div class="burger-icon">
+                  <div class="burger-bar"></div>
+                  <div class="burger-bar"></div>
+                  <div id="burger-half" class="burger-bar"></div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"><a href="index.html" class="navbar-brand"><img style="height: 66px;" src="assets/images/logo.png"></a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="main-menu"><a href="single.html">Profil Perusahaan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="" data-toggle="dropdown" class="dropdown-toggle">Media</a>
+              <ul class="dropdown-menu dropdown-menu-large row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Glyphicons</li>
+                    <li><a href="#">Available glyphs</a></li>
+                    <li class="disabled"><a href="#">How to use</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Dropdowns</li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Aligninment options</a></li>
+                    <li><a href="#">Headers</a></li>
+                    <li><a href="#">Disabled menu items</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Button groups</li>
+                    <li><a href="#">Basic example</a></li>
+                    <li><a href="#">Button toolbar</a></li>
+                    <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Nesting</a></li>
+                    <li><a href="#">Vertical variation</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Button dropdowns</li>
+                    <li><a href="#">Single button dropdowns</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Input groups</li>
+                    <li><a href="#">Basic example</a></li>
+                    <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Checkboxes and radio addons</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Navs</li>
+                    <li style="padding-left: 22px;"><img style="width: 100%; height: auto;" src="assets/img/news-img.jpg"></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Navbar</li>
+                    <li><a href="#">Default navbar</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Text</a></li>
+                    <li><a href="#">Non-nav links</a></li>
+                    <li><a href="#">Component alignment</a></li>
+                    <li><a href="#">Fixed to top</a></li>
+                    <li><a href="#">Fixed to bottom</a></li>
+                    <li><a href="#">Static top</a></li>
+                    <li><a href="#">Inverted navbar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Layanan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Masyarakat &amp; Lingkungan</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Tata Kelola</a></li>
+            <li class="main-menu"><i class="fa fa-angle-right"></i></li>
+            <li class="main-menu"><a href="single.html">Info Investor</a></li>
+            <li class="main-menu"><a id="login-header" href="#login-popup" data-effect="mfp-zoom-in" class="btn-rounded search-btn open-popup-link">Login</a></li>
+            <li class="main-menu"><a href="news.html" class="btn-rounded btn-rounded-circle"><i class="fa fa-search"></i></a></li>
+            <li class="main-menu dropdown-toggle lang"><a href="" style="padding: 7.5px !important;" data-toggle="dropdown" class="btn-rounded btn-rounded-circle"><img src="assets/images/flag-1.png"></a>
+              <ul role="menu" aria-labelledby="menu1" class="dropdown-menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IND</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ENG</a></li>
+              </ul>
+            </li>
+            <li id="burger"><a href="#" class="menu-toggle">
+                <div class="burger-icon">
+                  <div class="burger-bar"></div>
+                  <div class="burger-bar"></div>
+                  <div id="burger-half" class="burger-bar"></div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="menu-side"><a href="#" class="menu-toggle">
+        <div id="close-menu" class="burger-icon"></div></a>
+      <li class="list-main-menu-side"><a href="single.html"><span>Profil Perusahaan</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Media</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Layanan</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Masyarakat &amp; Lingkungan</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Tata Kelola</span></a></li>
+      <li class="list-main-menu-side"><a href="single.html"><span>Info Investor</span></a></li>
+      <li class="list-main-menu-side"><a id="login-header" href="#login-popup" data-effect="mfp-zoom-in" class="btn-rounded search-btn open-popup-link"><span>Login</span></a></li>
+      <li id="vertical-line"></li>
+      <li id="li-social-side"><span class="title-social">Temukan kami</span>
+        <div class="social-wrapper"><a href="#"><span id="soc-fb" class="icon-social fa fa-facebook"></span></a><a href="#"><span id="soc-twitter" class="icon-social fa fa-twitter"></span></a><a href="#"><span id="soc-instagram" class="icon-social fa fa-instagram"></span></a></div>
+      </li>
+    </nav>
+    <footer>
+      <div class="container">
+        <div class="footer-before">
+          <div class="logo-wrapper col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="image-logo"></div>
+            <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="links col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <div class="links-item">
+              <h4>Profil Perusahaan</h4>
+              <ul>
+                <li><a href="single.html">Tentang Kami</a></li>
+                <li><a href="single.html">Manajemen</a></li>
+                <li><a href="single.html">Cabang &amp; Anak Perusahaan</a></li>
+                <li><a href="single.html">Grafik</a></li>
+                <li><a href="single.html">Prestasi</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Media</h4>
+              <ul>
+                <li><a href="single.html">Berita Pers</a></li>
+                <li><a href="single.html">Berita Terkini</a></li>
+                <li><a href="single.html">BUMN Hadir untuk Negeri</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Tata Kelola</h4>
+              <ul>
+                <li><a href="single.html">Tata Kelola yang Baik</a></li>
+                <li><a href="single.html">Sistem Manajemen</a></li>
+                <li><a href="single.html">Sistem Pelaporan Pelanggaran</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Layanan</h4>
+              <ul>
+                <li><a href="single.html">Layanan Kapal</a></li>
+                <li><a href="single.html">Layanan Barang</a></li>
+                <li><a href="single.html">Layanan Peti Kemas</a></li>
+                <li><a href="single.html">Layanan Bongkar Muat</a></li>
+                <li><a href="single.html">Layanan Penumpang</a></li>
+                <li><a href="single.html">Manager On Duty</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Info Investor</h4>
+              <ul>
+                <li><a href="single.html">Pemegang Saham</a></li>
+                <li><a href="single.html">Laporan</a></li>
+                <li><a href="single.html">Obligasi Global</a></li>
+              </ul>
+            </div>
+            <div class="links-item">
+              <h4>Masyarakat &amp; Lingkungan</h4>
+              <ul>
+                <li><a href="single.html">PKBL</a></li>
+                <li><a href="single.html">Dukungan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-line">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="single.html">Beranda</a></li>
+          <li><a href="single.html">Karir</a></li>
+          <li><a href="single.html">Pengadaan</a></li>
+          <li><a href="single.html">Informasi Publik</a></li>
+          <li><a href="single.html">Peta Situs</a></li>
+          <li><a href="single.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bar-gradient">
+      <div class="container"><span class="bottom-footer-text">© 2015 Copyright by PT Pelabuhan Indonesia III (Persero). All rights reserved.</span></div>
+    </div>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="assets/scripts/all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.theme.css">
+    <script src="lib/owl-carousel/owl.carousel.js"></script>
+    <script src="lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  </body>
+</html>

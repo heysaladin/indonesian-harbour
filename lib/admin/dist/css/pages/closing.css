@@ -1,0 +1,33 @@
+.box-closing {
+    background: #1a4462 url('../../../../../assets/images/story-bg.jpg') no-repeat top center;
+    background-size: cover;
+    min-height: 350px;
+}
+
+.box-closing > div {
+    min-height: inherit;
+}
+
+.box-closing > div > div {
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-closing div div h1 {
+    padding: 0 25%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+    font-size: 36px;
+}
+
+.box-closing div div p {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+    font-size: 18px;
+    padding: 0 25%;
+}
